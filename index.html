@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Instagram Bundle - 200 Canva Templates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
+        }
+
+        .hero .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .price .original {
+            text-decoration: line-through;
+            opacity: 0.7;
+            font-size: 1.5rem;
+        }
+
+        .features {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .templates-section {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .templates-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .templates-list {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .template-category {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .template-category h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .template-category p {
+            color: #666;
+        }
+
+        .benefits {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            color: white;
+        }
+
+        .benefits h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .benefits-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+
+        .benefit-item::before {
+            content: "✓";
+            font-size: 2rem;
+            margin-right: 20px;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            padding: 80px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .guarantee {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 700px;
+            margin: 40px auto 0;
+        }
+
+        .guarantee h3 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .guarantee p {
+            color: #856404;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .features h2, .templates-section h2, .benefits h2, .cta-section h2 {
+                font-size: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        .stat-label {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>📱 Real Estate Instagram Bundle</h1>
+            <p class="subtitle">200 Professional Canva Templates to Elevate Your Real Estate Marketing</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">200</span>
+                    <span class="stat-label">Templates</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Editable</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Usage</span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="original">$197</span>
+                <span>$47</span>
+            </div>
+            <a href="#buy" class="cta-button">Get Instant Access Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose This Bundle?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Easy to Customize</h3>
+                    <p>All templates are fully editable in Canva. Change colors, fonts, images, and text in just a few clicks - no design experience needed!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Save Hours of Work</h3>
+                    <p>Stop spending hours creating content from scratch. With 200 ready-to-use templates, you'll have months of content ready in minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Boost Engagement</h3>
+                    <p>Professionally designed templates that catch attention and drive engagement. Stand out in your followers' feeds and attract more clients.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Professional Quality</h3>
+                    <p>Look like you hired a professional designer. These templates follow the latest design trends and Instagram best practices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Unlimited Usage</h3>
+                    <p>Use these templates as many times as you want. Perfect for multiple properties, different markets, and ongoing campaigns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Instagram-Optimized</h3>
+                    <p>All templates are sized perfectly for Instagram posts, stories, and reels. Ready to upload directly to your account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="templates-section">
+        <div class="container">
+            <h2>What's Included in the Bundle</h2>
+            <div class="templates-list">
+                <div class="template-category">
+                    <h4>Property Listings</h4>
+                    <p>Showcase your properties with stunning listing templates</p>
+                </div>
+                <div class="template-category">
+                    <h4>Open House Announcements</h4>
+                    <p>Promote your open houses with eye-catching designs</p>
+                </div>
+                <div class="template-category">
+                    <h4>Just Sold/Listed</h4>
+                    <p>Celebrate your successes and build credibility</p>
+                </div>
+                <div class="template-category">
+                    <h4>Market Updates</h4>
+                    <p>Share valuable market insights and statistics</p>
+                </div>
+                <div class="template-category">
+                    <h4>Tips & Advice</h4>
+                    <p>Position yourself as an expert with helpful content</p>
+                </div>
+                <div class="template-category">
+                    <h4>Testimonials</h4>
+                    <p>Highlight client reviews and success stories</p>
+                </div>
+                <div class="template-category">
+                    <h4>Quotes & Motivation</h4>
+                    <p>Inspire your audience with engaging quotes</p>
+                </div>
+                <div class="template-category">
+                    <h4>Stories & Reels</h4>
+                    <p>Vertical templates optimized for stories and reels</p>
+                </div>
+                <div class="template-category">
+                    <h4>Seasonal Content</h4>
+                    <p>Holiday and seasonal templates for year-round posting</p>
+                </div>
+                <div class="template-category">
+                    <h4>Call-to-Actions</h4>
+                    <p>Drive action with compelling CTA templates</p>
+                </div>
+                <div class="template-category">
+                    <h4>Neighborhood Guides</h4>
+                    <p>Showcase local areas and communities</p>
+                </div>
+                <div class="template-category">
+                    <h4>Team Introductions</h4>
+                    <p>Introduce yourself and your team professionally</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Perfect for Real Estate Professionals Who Want To:</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">Post consistently without the stress of creating content from scratch</div>
+                <div class="benefit-item">Maintain a professional brand image across all social media</div>
+                <div class="benefit-item">Save money on expensive designers or design tools</div>
+                <div class="benefit-item">Grow their Instagram following with engaging content</div>
+                <div class="benefit-item">Generate more leads from social media marketing</div>
+                <div class="benefit-item">Stand out from competitors with unique, eye-catching posts</div>
+                <div class="benefit-item">Create content quickly, even with a busy schedule</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="buy">
+        <div class="container">
+            <h2>Ready to Transform Your Instagram Presence?</h2>
+            <p>Get instant access to all 200 templates for just $47</p>
+            <a href="#" class="cta-button" onclick="alert('Payment processing would be integrated here with Stripe, PayPal, or Gumroad'); return false;">Buy Now - $47</a>
+            <div class="guarantee">
+                <h3>🛡️ 30-Day Money-Back Guarantee</h3>
+                <p>Try the bundle risk-free! If you're not completely satisfied with the templates, we'll refund your purchase within 30 days - no questions asked.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Real Estate Instagram Bundle. All rights reserved.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Templates are for use with Canva. Canva account required (free account works).</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
